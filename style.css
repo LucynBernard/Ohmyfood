@@ -1,3 +1,34 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.location {
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    color: #353535;
+    background-color: #d1d1d1;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    box-shadow: 10px 10px 10px #686868
+}
+
+.fa-location-dot {
+    margin-right: 30px;
+}
+
 section img {
     width: 900px;
 }
