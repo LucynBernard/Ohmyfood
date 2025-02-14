@@ -29,6 +29,38 @@ header {
     margin-right: 30px;
 }
 
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+    padding-left: 250px;
+    padding-right: 250px;
+    margin-bottom: 0;
+}
+
+.intro p {
+    font-size: 2em;
+    font-weight: 150;
+    text-align: center;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.explore {
+    padding: 15px;
+    font-size: 1.5em;
+    border-radius: 50px;
+    width: 50%;
+    margin-left: 250px;
+    background: linear-gradient(90deg, #E972DA, #A05ADC);
+    border-style: none;
+}
+
 section img {
     width: 900px;
 }
