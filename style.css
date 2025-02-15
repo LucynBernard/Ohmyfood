@@ -22,7 +22,7 @@ header {
     background-color: #d1d1d1;
     padding-top: 25px;
     padding-bottom: 25px;
-    box-shadow: 10px 10px 10px #686868
+    box-shadow: 0 10px 10px #686868
 }
 
 .fa-location-dot {
@@ -33,6 +33,9 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: #eeeeee;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 h1 {
@@ -49,16 +52,41 @@ h1 {
     text-align: center;
     padding-left: 150px;
     padding-right: 150px;
+    margin: 50px;
 }
 
 .explore {
-    padding: 15px;
-    font-size: 1.5em;
+    padding: 20px;
+    font-size: 2em;
     border-radius: 50px;
-    width: 50%;
-    margin-left: 250px;
-    background: linear-gradient(90deg, #E972DA, #A05ADC);
+    width: 40%;
+    margin-left: 300px;
+    background: linear-gradient(0deg, #E972DA, #A05ADC);
     border-style: none;
+    color: white;
+    margin-bottom: 50px;
+    box-shadow: 10px 10px 10px lightgray;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+.fonction button {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    background-color: #eeeeee;
+    border: none;
+    border-radius: 30px;
+    padding: 10px;
+    box-shadow: 10px 10px 10px lightgray;
+    width: 70%;
+    justify-content: center;
+}
+
+.fonction p {
+    font-size: 2em;
 }
 
 section img {
