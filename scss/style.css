@@ -19,7 +19,7 @@ header {
   justify-content: center;
   font-size: 2em;
   color: #353535;
-  background-color: #d1d1d1;
+  background-color: #eeeeee;
   padding-top: 25px;
   padding-bottom: 25px;
   box-shadow: 0 10px 10px #686868;
@@ -66,14 +66,10 @@ h1 {
   box-shadow: 10px 10px 10px lightgray;
 }
 
-h2 {
-  font-size: 3em;
-  margin-left: -25px;
-}
-
 .fonction {
   padding-left: 55px;
   padding-right: 30px;
+  padding-bottom: 50px;
 }
 .fonction button {
   display: flex;
@@ -114,21 +110,28 @@ h2 {
 .fonction p {
   font-size: 2em;
 }
+.fonction h2 {
+  font-size: 3em;
+  margin-left: -25px;
+}
 
 h3 {
   font-size: 2em;
   color: black;
+  margin-bottom: 0px;
 }
 
 .cards {
   padding-left: 30px;
   padding-right: 30px;
-  background-color: #d1d1d1;
+  background-color: #eeeeee;
+  padding-bottom: 100px;
 }
 .cards p {
   font-size: 2em;
   font-weight: 150;
   color: black;
+  margin-top: 0px;
 }
 .cards img {
   width: 900px;
@@ -141,4 +144,54 @@ h3 {
 .cards a {
   border-radius: 20px;
   text-decoration: none;
+}
+.cards h2 {
+  font-size: 3em;
+  padding-top: 50px;
+}
+.cards article {
+  background-color: white;
+  border-radius: 30px;
+  width: 900px;
+  padding-bottom: 5px;
+  margin-bottom: 40px;
+  position: relative;
+}
+.cards i {
+  font-size: 3em;
+  color: black;
+  position: absolute;
+  right: 30px;
+  bottom: 50px;
+}
+.cards div {
+  padding-left: 20px;
+}
+
+footer {
+  background-color: #353535;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+footer img {
+  color: white;
+}
+footer ul {
+  list-style-type: none;
+  color: white;
+  font-size: 2em;
+}
+footer ul li {
+  margin-bottom: 15px;
+}
+footer .symbols {
+  display: flex;
+  align-items: baseline;
+}
+footer i {
+  padding-right: 20px;
+}
+footer p {
+  margin-top: 0;
+  margin-bottom: 0px;
 }/*# sourceMappingURL=style.css.map */
