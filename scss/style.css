@@ -164,7 +164,7 @@ h3 {
   right: 30px;
   bottom: 50px;
 }
-.cards div {
+.cards .cardtext {
   padding-left: 20px;
 }
 
@@ -219,5 +219,24 @@ footer p {
   .allbuttons {
     display: flex;
     flex-direction: row;
+  }
+  .cards {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+  .cards .allcards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .cards a {
+    width: 50%;
+  }
+  ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+  ul li {
+    margin-right: 20px;
   }
 }/*# sourceMappingURL=style.css.map */
