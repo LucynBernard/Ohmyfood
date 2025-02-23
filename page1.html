@@ -3,6 +3,11 @@
 
 <head>
     <title>Ohmyfood page1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mingzat&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Shrikhand&display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/c464e2cbb9.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="scss/restaurants.css">
 </head>
@@ -21,16 +26,20 @@
             <img src="Images et textes Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
                 alt="Photo restaurant la palette du gout">
             <section>
-                <h1>La Palette du Goût</h1>
-                <i class="fa-regular fa-heart"></i>
+                <div class="restau-title">
+                    <h1>La palette du goût</h1>
+                    <i class="fa-regular fa-heart"></i>
+                </div>
                 <div>
-                    <h2>Entrées</h2>
+                    <h2>ENTRÉES</h2>
                     <ul>
                         <a href="#">
                             <li>
                                 <h3>Fricassée d'escargots</h3>
-                                <p>Au piment d'Espelette</p>
-                                <span>25€</span>
+                                <div class="prices">
+                                    <p>Au piment d'Espelette</p>
+                                    <span>25€</span>
+                                </div>
                             </li>
                         </a>
                         <a href="#">
@@ -48,7 +57,7 @@
                             </li>
                         </a>
                     </ul>
-                    <h2>Plats</h2>
+                    <h2>PLATS</h2>
                     <ul>
                         <a href="#">
                             <li>
@@ -72,7 +81,7 @@
                             </li>
                         </a>
                     </ul>
-                    <h2>Desserts</h2>
+                    <h2>DESSERTS</h2>
                     <ul>
                         <a href="#">
                             <li>
@@ -97,8 +106,8 @@
                         </a>
                     </ul>
                 </div>
+                <button>Commander</button>
             </section>
-            <button>Commander</button>
             <footer>
                 <img src="Images et textes Ohmyfood/images/logo/ohmyfood@2x.svg" alt="logo de ohmyfood">
                 <ul>

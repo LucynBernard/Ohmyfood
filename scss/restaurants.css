@@ -12,10 +12,13 @@ header {
   justify-content: center;
   margin-top: 50px;
   margin-bottom: 30px;
+  position: relative;
 }
 header i {
   font-size: 3em;
   color: #353535;
+  position: absolute;
+  left: 50px;
 }
 
 main img {
@@ -25,5 +28,62 @@ main img {
 }
 
 h1 {
+  font-family: "Shrikhand", serif;
+  font-weight: 300;
+  font-size: 1.5em;
   margin-top: 0px;
+}
+
+section {
+  padding-top: 50px;
+  padding-left: 20px;
+  background-color: #eeeeee;
+  padding-right: 20px;
+}
+section .restau-title {
+  display: flex;
+  font-size: 3em;
+}
+section .restau-title i {
+  margin-left: 200px;
+}
+section h2 {
+  font-size: 2em;
+  font-weight: 150;
+  border-bottom: solid 3px #99E2D0;
+  width: 60px;
+}
+section ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+section a {
+  color: black;
+  text-decoration: none;
+}
+section li {
+  background-color: white;
+  border-radius: 30px;
+  padding: 15px;
+  box-shadow: 10px 10px 10px lightgray;
+  margin-bottom: 15px;
+}
+section h3 {
+  font-size: 2em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+section p {
+  font-size: 1.5em;
+  font-weight: 150;
+  margin-top: 10px;
+}
+section span {
+  font-size: 1.5em;
+  font-weight: 450;
+  color: #353535;
+  margin-top: 10px;
+}
+section .prices {
+  display: flex;
 }/*# sourceMappingURL=restaurants.css.map */
