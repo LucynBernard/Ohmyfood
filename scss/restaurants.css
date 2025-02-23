@@ -21,16 +21,17 @@ header i {
   left: 50px;
 }
 
-main img {
+main .restauimg {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
+  height: 700px;
 }
 
 h1 {
   font-family: "Shrikhand", serif;
   font-weight: 300;
-  font-size: 1.5em;
+  font-size: 70px;
   margin-top: 0px;
 }
 
@@ -42,10 +43,8 @@ section {
 }
 section .restau-title {
   display: flex;
+  justify-content: space-between;
   font-size: 3em;
-}
-section .restau-title i {
-  margin-left: 200px;
 }
 section h2 {
   font-size: 2em;
@@ -64,7 +63,7 @@ section a {
 section li {
   background-color: white;
   border-radius: 30px;
-  padding: 15px;
+  padding: 20px 30px 20px 20px;
   box-shadow: 10px 10px 10px lightgray;
   margin-bottom: 15px;
 }
@@ -77,6 +76,7 @@ section p {
   font-size: 1.5em;
   font-weight: 150;
   margin-top: 10px;
+  margin-bottom: 0;
 }
 section span {
   font-size: 1.5em;
@@ -86,4 +86,51 @@ section span {
 }
 section .prices {
   display: flex;
+  justify-content: space-between;
+}
+section .order {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section button {
+  padding: 20px;
+  font-size: 2em;
+  border-radius: 50px;
+  width: 40%;
+  background: linear-gradient(0deg, #A05ADC, #E972DA);
+  border-style: none;
+  color: white;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  box-shadow: 10px 10px 10px lightgray;
+}
+
+footer {
+  background-color: #353535;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+footer img {
+  color: white;
+  padding-left: 40px;
+}
+footer ul {
+  list-style-type: none;
+  color: white;
+  font-size: 2em;
+}
+footer ul li {
+  margin-bottom: 15px;
+}
+footer .symbols {
+  display: flex;
+  align-items: baseline;
+}
+footer i {
+  padding-right: 20px;
+}
+footer p {
+  margin-top: 0;
+  margin-bottom: 0px;
 }/*# sourceMappingURL=restaurants.css.map */
