@@ -10,8 +10,8 @@ body {
 header {
   display: flex;
   justify-content: center;
-  margin-top: 50px;
-  margin-bottom: 30px;
+  padding-top: 50px;
+  padding-bottom: 30px;
   position: relative;
 }
 header i {
@@ -55,10 +55,6 @@ section h2 {
 section ul {
   list-style-type: none;
   padding-left: 0;
-}
-section a {
-  color: black;
-  text-decoration: none;
 }
 section li {
   background-color: white;
