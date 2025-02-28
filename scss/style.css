@@ -175,6 +175,9 @@ footer ul {
 footer ul li {
   margin-bottom: 15px;
 }
+footer ul .logo {
+  display: none;
+}
 footer a {
   color: white;
   text-decoration: none;
@@ -204,10 +207,10 @@ footer p {
     box-shadow: none;
   }
   h1 {
-    font-size: 4em;
+    font-size: 40px;
   }
   .explore {
-    width: 25%;
+    width: 218px;
   }
   .fonction {
     padding-left: 200px;
@@ -230,13 +233,23 @@ footer p {
     justify-content: space-between;
   }
   .cards a {
-    width: 50%;
+    width: 45%;
   }
-  ul {
+  footer p {
+    display: none;
+  }
+  footer ul {
     display: flex;
     justify-content: flex-end;
   }
-  ul li {
+  footer ul li {
     margin-right: 20px;
+  }
+  footer ul .logo span {
+    display: block;
+    font-family: "Shrikhand", serif;
+    font-weight: 300;
+    color: white;
+    font-size: 18px;
   }
 }/*# sourceMappingURL=style.css.map */

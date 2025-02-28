@@ -31,13 +31,6 @@ main .restauimg {
   height: 700px;
 }
 
-h1 {
-  font-family: "Shrikhand", serif;
-  font-weight: 300;
-  font-size: 70px;
-  margin-top: 0px;
-}
-
 section {
   padding-top: 50px;
   padding-left: 20px;
@@ -47,10 +40,17 @@ section {
 section .restau-title {
   display: flex;
   justify-content: space-between;
-  font-size: 3em;
+}
+section .restau-title h1 {
+  font-family: "Shrikhand", serif;
+  font-weight: 400;
+  font-size: 28px;
+  margin-top: 0px;
+}
+section .restau-title i {
+  font-size: 2em;
 }
 section h2 {
-  font-size: 2em;
   font-weight: 150;
   border-bottom: solid 3px #99E2D0;
   width: 60px;
@@ -67,18 +67,16 @@ section li {
   margin-bottom: 15px;
 }
 section h3 {
-  font-size: 2em;
+  font-size: 18px;
   margin-top: 0;
   margin-bottom: 0;
 }
 section p {
-  font-size: 1.5em;
   font-weight: 150;
   margin-top: 10px;
   margin-bottom: 0;
 }
 section span {
-  font-size: 1.5em;
   font-weight: 450;
   color: #353535;
   margin-top: 10px;
@@ -94,9 +92,8 @@ section .order {
 }
 section button {
   padding: 20px;
-  font-size: 2em;
   border-radius: 50px;
-  width: 40%;
+  width: 200px;
   background: linear-gradient(0deg, #A05ADC, #E972DA);
   border-style: none;
   color: white;
@@ -143,4 +140,19 @@ footer i {
 footer p {
   margin-top: 0;
   margin-bottom: 0px;
+}
+
+/****** Media queries ***********/
+/* Large devices (laptop, desktop, superior to 1025px) */
+@media (min-width: 1025px) {
+  header i {
+    font-size: 28px;
+    bottom: 25px;
+  }
+  section {
+    width: 80%;
+    margin-left: 200px;
+    margin-right: 200px;
+    border-radius: 40px 40px 0 0;
+  }
 }/*# sourceMappingURL=restaurants.css.map */
