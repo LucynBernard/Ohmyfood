@@ -155,4 +155,33 @@ footer p {
     margin-right: 200px;
     border-radius: 40px 40px 0 0;
   }
+  section .restau-title {
+    justify-content: center;
+  }
+  section .restau-title h1 {
+    margin-right: 20px;
+  }
+  section .menus {
+    margin-left: 300px;
+  }
+  section li {
+    width: 60%;
+  }
+  footer p {
+    display: none;
+  }
+  footer ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+  footer ul li {
+    margin-right: 20px;
+  }
+  footer ul .logo span {
+    display: block;
+    font-family: "Shrikhand", serif;
+    font-weight: 300;
+    color: white;
+    font-size: 18px;
+  }
 }/*# sourceMappingURL=restaurants.css.map */
