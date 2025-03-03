@@ -56,14 +56,14 @@ header img {
 .intro .explore {
   padding: 15px 20px 15px 20px;
   border-radius: 50px;
-  background: linear-gradient(0deg, #E972DA, #A05ADC);
+  background: linear-gradient(0deg, #FF79DA, #9356DC);
   border-style: none;
   color: white;
   box-shadow: 10px 10px 10px lightgray;
 }
 
 .fonction {
-  padding-left: 55px;
+  padding-left: 40px;
   padding-right: 30px;
   padding-bottom: 50px;
 }
@@ -87,7 +87,7 @@ header img {
   top: 50%;
   width: 25px;
   height: 25px;
-  background-color: #A05ADC;
+  background-color: #9356DC;
   color: white;
   display: flex;
   justify-content: center;
@@ -100,11 +100,11 @@ header img {
   color: grey;
 }
 .fonction button:hover i {
-  color: #A05ADC;
+  color: #9356DC;
 }
 .fonction h2 {
   font-size: 1.5em;
-  margin-left: -30px;
+  margin-left: -10px;
 }
 
 .cards {
@@ -245,8 +245,10 @@ footer p {
   footer ul li {
     margin-right: 20px;
   }
-  footer ul .logo span {
+  footer ul .logo {
     display: block;
+  }
+  footer ul .logo span {
     font-family: "Shrikhand", serif;
     font-weight: 300;
     color: white;

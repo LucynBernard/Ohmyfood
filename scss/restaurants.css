@@ -1,5 +1,6 @@
 * {
   font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
 }
 
 body {
@@ -10,32 +11,37 @@ body {
 header {
   display: flex;
   justify-content: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
   position: relative;
+  height: 78.7px;
+  align-items: center;
 }
 header img {
   width: 200px;
 }
 header i {
-  font-size: 3em;
+  font-size: 24px;
   color: #353535;
   position: absolute;
-  left: 50px;
+  left: 25px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 main .restauimg {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
-  height: 700px;
+  max-height: 400px;
 }
 
 section {
-  padding-top: 50px;
+  padding-top: 30px;
   padding-left: 20px;
   background-color: #eeeeee;
   padding-right: 20px;
+  position: relative;
+  margin-top: -50px;
+  border-radius: 30px 30px 0 0;
 }
 section .restau-title {
   display: flex;
@@ -54,6 +60,7 @@ section h2 {
   font-weight: 150;
   border-bottom: solid 3px #99E2D0;
   width: 60px;
+  margin-top: 0;
 }
 section ul {
   list-style-type: none;
@@ -61,8 +68,8 @@ section ul {
 }
 section li {
   background-color: white;
-  border-radius: 30px;
-  padding: 20px 30px 20px 20px;
+  border-radius: 15px;
+  padding: 15px;
   box-shadow: 10px 10px 10px lightgray;
   margin-bottom: 15px;
 }
@@ -72,14 +79,15 @@ section h3 {
   margin-bottom: 0;
 }
 section p {
+  font-size: 15px;
   font-weight: 150;
-  margin-top: 10px;
+  margin-top: 5px;
   margin-bottom: 0;
 }
 section span {
   font-weight: 450;
   color: #353535;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 section .prices {
   display: flex;
@@ -94,7 +102,7 @@ section button {
   padding: 20px;
   border-radius: 50px;
   width: 200px;
-  background: linear-gradient(0deg, #A05ADC, #E972DA);
+  background: linear-gradient(0deg, #9356DC, #FF79DA);
   border-style: none;
   color: white;
   margin-top: 50px;
@@ -151,8 +159,8 @@ footer p {
   }
   section {
     width: 80%;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 40px 40px 0 0;
   }
   section .restau-title {
@@ -162,10 +170,11 @@ footer p {
     margin-right: 20px;
   }
   section .menus {
-    margin-left: 300px;
+    margin: auto;
+    width: 50%;
   }
   section li {
-    width: 60%;
+    width: 100%;
   }
   footer p {
     display: none;
