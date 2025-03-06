@@ -14,7 +14,8 @@ body {
   z-index: 999;
   width: 100%;
   height: 100%;
-  background-color: white;
+  background-color: transparent;
+  animation: visibility 1.5s ease forwards;
 }
 .loader-container .loader {
   width: 120px;
@@ -34,6 +35,14 @@ body {
   }
   100% {
     transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+@keyframes visibility {
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 
@@ -86,10 +95,15 @@ header img {
 .intro .explore {
   padding: 15px 20px 15px 20px;
   border-radius: 50px;
-  background: linear-gradient(0deg, #FF79DA, #9356DC);
+  background: linear-gradient(180deg, #FF79DA, #9356DC);
   border-style: none;
   color: white;
   box-shadow: 10px 10px 10px lightgray;
+  transition: all 0.4s ease-in-out;
+}
+.intro .explore:hover {
+  box-shadow: 5px 5px 5px #353535;
+  background: linear-gradient(to bottom, #ff93e1, #a16be0 80%);
 }
 
 .fonction {
@@ -178,10 +192,35 @@ header img {
 }
 .cards i {
   font-size: 1.5em;
-  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 730px;
+}
+.cards i::before {
+  content: "\f004";
   position: absolute;
-  right: 20px;
-  bottom: 30px;
+  font-family: "Font Awesome 5 Free";
+  transition: all 0.8s ease-in-out;
+}
+.cards i::after {
+  content: "\f004";
+  font-family: "Font Awesome 5 Free";
+  position: absolute;
+  transition: all 0.8s ease-in-out;
+  background: linear-gradient(to bottom, #FF79DA, #9356DC 80%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(0, 0, 0, 0);
+  opacity: 0;
+  cursor: pointer;
+}
+.cards i:hover::before {
+  color: rgba(0, 0, 0, 0);
+}
+.cards i:hover::after {
+  font-weight: 900;
+  opacity: 1;
 }
 .cards .cardtext {
   padding-left: 20px;

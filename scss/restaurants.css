@@ -56,49 +56,88 @@ section .restau-title h1 {
 section .restau-title i {
   font-size: 2em;
 }
+section .restau-title i::before {
+  content: "\f004";
+  position: absolute;
+  font-family: "Font Awesome 5 Free";
+  transition: all 0.8s ease-in-out;
+}
+section .restau-title i::after {
+  content: "\f004";
+  font-family: "Font Awesome 5 Free";
+  position: absolute;
+  transition: all 0.8s ease-in-out;
+  background: linear-gradient(to bottom, #FF79DA, #9356DC 80%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(0, 0, 0, 0);
+  opacity: 0;
+  cursor: pointer;
+}
+section .restau-title i:hover::before {
+  color: rgba(0, 0, 0, 0);
+}
+section .restau-title i:hover::after {
+  font-weight: 900;
+  opacity: 1;
+}
 section h2 {
   font-weight: 150;
   border-bottom: solid 3px #99E2D0;
   width: 60px;
   margin-top: 0;
 }
-section ul {
+@keyframes appear {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+section .menus ul {
   list-style-type: none;
   padding-left: 0;
 }
-section li {
+section .menus li {
   background-color: white;
   border-radius: 15px;
   padding: 15px;
   box-shadow: 10px 10px 10px lightgray;
   margin-bottom: 15px;
+  animation: appear 1s both;
 }
-section h3 {
+section .menus h3 {
   font-size: 18px;
   margin-top: 0;
   margin-bottom: 0;
+  animation: appear 1s both;
 }
-section p {
+section .menus p {
   font-size: 15px;
   font-weight: 150;
   margin-top: 5px;
   margin-bottom: 0;
 }
-section span {
+section .menus span {
   font-weight: 450;
   color: #353535;
   margin-top: 5px;
 }
-section .prices {
+section .menus .prices {
   display: flex;
   justify-content: space-between;
 }
-section .order {
+
+.order {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-section button {
+
+button {
   padding: 20px;
   border-radius: 50px;
   width: 200px;
@@ -108,6 +147,11 @@ section button {
   margin-top: 50px;
   margin-bottom: 50px;
   box-shadow: 10px 10px 10px lightgray;
+  transition: all 0.4s ease-in-out;
+}
+button:hover {
+  box-shadow: 5px 5px 5px #353535;
+  background: linear-gradient(to bottom, #ff93e1, #a16be0 80%);
 }
 
 footer {
