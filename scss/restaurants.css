@@ -53,16 +53,16 @@ section .restau-title h1 {
   font-size: 28px;
   margin-top: 0px;
 }
-section .restau-title i {
+section .restau-title .fa-heart {
   font-size: 2em;
 }
-section .restau-title i::before {
+section .restau-title .fa-heart::before {
   content: "\f004";
   position: absolute;
   font-family: "Font Awesome 5 Free";
   transition: all 0.8s ease-in-out;
 }
-section .restau-title i::after {
+section .restau-title .fa-heart::after {
   content: "\f004";
   font-family: "Font Awesome 5 Free";
   position: absolute;
@@ -74,10 +74,10 @@ section .restau-title i::after {
   opacity: 0;
   cursor: pointer;
 }
-section .restau-title i:hover::before {
+section .restau-title .fa-heart:hover::before {
   color: rgba(0, 0, 0, 0);
 }
-section .restau-title i:hover::after {
+section .restau-title .fa-heart:hover::after {
   font-weight: 900;
   opacity: 1;
 }
@@ -130,22 +130,17 @@ section .menus .prices {
   display: flex;
   justify-content: space-between;
 }
-section .menus .menu-check {
+section .menus .fa-circle-check {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: -65px;
   width: 65px;
-  padding: 0 0.9375rem;
-  background-color: #99e2d0;
-  transition: margin-right 0.4s ease-in-out;
+  background-color: #99E2D0;
 }
-section .menus .menu-check::after {
-  content: "\f00c";
-  font-family: "FontAwesome";
-  padding: 0.3125rem;
+section .menus .fa-circle-check::after {
+  content: "";
   border-radius: 50%;
-  color: #99e2d0;
+  color: #99E2D0;
   font-size: 0.9375rem;
   background-color: #fff;
   transition: transform 0.4s ease-in-out;
