@@ -108,19 +108,7 @@ section h2 {
 .menus li:hover .fa-circle-check {
   transform: translateX(-65px);
 }
-.menus h3 {
-  font-size: 18px;
-  margin-top: 0;
-  margin-bottom: 0;
-  animation: appear 1s both;
-}
-.menus p {
-  font-size: 15px;
-  font-weight: 150;
-  margin-top: 5px;
-  margin-bottom: 0;
-}
-.menus span {
+.menus .prices {
   font-weight: 450;
   color: #353535;
   margin-top: 30px;
@@ -134,6 +122,8 @@ section h2 {
   align-items: center;
   width: 65px;
   background-color: #99E2D0;
+  color: white;
+  font-size: 24px;
   height: 100%;
   margin-right: -65px;
   transition-property: transform;
@@ -141,6 +131,25 @@ section h2 {
 }
 .menus .description {
   padding: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menus .description h3 {
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 0;
+  animation: appear 1s both;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menus .description p {
+  font-size: 15px;
+  font-weight: 150;
+  margin-top: 5px;
+  margin-bottom: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .order {
@@ -204,6 +213,9 @@ footer i {
 footer p {
   margin-top: 0;
   margin-bottom: 0px;
+}
+footer .logo span {
+  display: none;
 }
 
 /****** Media queries ***********/

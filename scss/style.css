@@ -229,6 +229,18 @@ header img {
   justify-content: space-between;
   align-items: center;
 }
+.cards span {
+  position: absolute;
+  background-color: #99E2D0;
+  color: #278870;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  top: 15px;
+  right: 15px;
+}
 
 footer {
   background-color: #353535;
