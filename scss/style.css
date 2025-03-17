@@ -1,5 +1,6 @@
 * {
   font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
 }
 
 body {
@@ -112,7 +113,7 @@ header img {
   padding-right: 30px;
   padding-bottom: 50px;
 }
-.fonction button {
+.fonction .choice {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -126,7 +127,7 @@ header img {
   justify-content: center;
   position: relative;
 }
-.fonction button span {
+.fonction .choice span {
   position: absolute;
   left: 0;
   top: 50%;
@@ -140,11 +141,11 @@ header img {
   border-radius: 100%;
   transform: translate(-50%, -50%);
 }
-.fonction button i {
+.fonction .choice i {
   padding-right: 20px;
   color: grey;
 }
-.fonction button:hover i {
+.fonction .choice:hover i {
   color: #9356DC;
 }
 .fonction h2 {
@@ -301,12 +302,13 @@ footer p {
     padding-left: 200px;
     padding-right: 200px;
   }
-  .fonction button {
-    margin-right: 40px;
+  .fonction .choice {
+    width: 30%;
   }
   .allbuttons {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
   }
   .cards {
     padding-left: 200px;

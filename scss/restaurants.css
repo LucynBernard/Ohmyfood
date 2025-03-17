@@ -91,6 +91,16 @@ section h2 {
   margin-top: 0;
 }
 
+@keyframes appear {
+  0% {
+    margin-top: 100px;
+    opacity: 0.2;
+  }
+  100% {
+    margin-top: 0;
+    opacity: 1;
+  }
+}
 .menus ul {
   list-style-type: none;
   padding-left: 0;
@@ -104,9 +114,10 @@ section h2 {
   height: 75px;
   overflow: hidden;
   width: 100%;
+  animation: appear 2s;
 }
 .menus li:hover .fa-circle-check {
-  transform: translateX(-65px);
+  margin-right: 0;
 }
 .menus .prices {
   font-weight: 450;
@@ -126,8 +137,7 @@ section h2 {
   font-size: 24px;
   height: 100%;
   margin-right: -65px;
-  transition-property: transform;
-  transition-duration: 500ms;
+  transition: all 500ms;
 }
 .menus .description {
   padding: 15px;
