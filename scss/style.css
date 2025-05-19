@@ -17,7 +17,6 @@ body {
   height: 100%;
   background-color: #353535;
   animation: visibility 1.5s ease forwards;
-  pointer-events: none;
 }
 .loader-container .loader {
   width: 120px;
@@ -45,6 +44,7 @@ body {
   }
   100% {
     opacity: 0;
+    z-index: -1;
   }
 }
 
